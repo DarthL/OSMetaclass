@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		412192941B72FDD8008A46D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 412192931B72FDD8008A46D1 /* Foundation.framework */; };
+		412192A01B72FDD8008A46D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4121929F1B72FDD8008A46D1 /* main.m */; };
+		412192A81B72FE1B008A46D1 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 412192A71B72FE1B008A46D1 /* IOKit.framework */; };
+		412192AE1B7309B8008A46D1 /* DataBuild.m in Sources */ = {isa = PBXBuildFile; fileRef = 412192AD1B7309B8008A46D1 /* DataBuild.m */; };
+		412192B61B79E930008A46D1 /* GoFuzz.m in Sources */ = {isa = PBXBuildFile; fileRef = 412192B51B79E930008A46D1 /* GoFuzz.m */; };
+		412192BE1B79F67E008A46D1 /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 412192BD1B79F67E008A46D1 /* Client.m */; };
+		412192C11B7A0FBD008A46D1 /* FuzzIOHIDResourceUserClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 412192C01B7A0FBD008A46D1 /* FuzzIOHIDResourceUserClient.m */; };
+		412192C51B7B42D8008A46D1 /* FuzzIOHIDLibUerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 412192C41B7B42D8008A46D1 /* FuzzIOHIDLibUerClient.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		412192901B72FDD8008A46D1 /* fuzzFoundation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = fuzzFoundation; sourceTree = BUILT_PRODUCTS_DIR; };
+		412192931B72FDD8008A46D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		412192981B72FDD8008A46D1 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		412192991B72FDD8008A46D1 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		4121929B1B72FDD8008A46D1 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		4121929E1B72FDD8008A46D1 /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/bin/0xdeadfa11; sourceTree = "<group>"; };
+		4121929F1B72FDD8008A46D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		412192A11B72FDD8008A46D1 /* fuzzFoundation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fuzzFoundation-Prefix.pch"; sourceTree = "<group>"; };
+		412192A71B72FE1B008A46D1 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
+		412192AC1B730930008A46D1 /* DataBuild.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataBuild.h; sourceTree = "<group>"; };
+		412192AD1B7309B8008A46D1 /* DataBuild.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBuild.m; sourceTree = "<group>"; };
+		412192AF1B786F7B008A46D1 /* Client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
+		412192B11B788EB5008A46D1 /* ClientDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClientDelegate.h; sourceTree = "<group>"; };
+		412192B41B79E89B008A46D1 /* GoFuzz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoFuzz.h; sourceTree = "<group>"; };
+		412192B51B79E930008A46D1 /* GoFuzz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoFuzz.m; sourceTree = "<group>"; };
+		412192BD1B79F67E008A46D1 /* Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Client.m; sourceTree = "<group>"; };
+		412192BF1B7A0F9E008A46D1 /* FuzzIOHIDResourceUserClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FuzzIOHIDResourceUserClient.h; sourceTree = "<group>"; };
+		412192C01B7A0FBD008A46D1 /* FuzzIOHIDResourceUserClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuzzIOHIDResourceUserClient.m; sourceTree = "<group>"; };
+		412192C41B7B42D8008A46D1 /* FuzzIOHIDLibUerClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuzzIOHIDLibUerClient.m; sourceTree = "<group>"; };
+		412192C61B7B433C008A46D1 /* FuzzIOHIDLibUserClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FuzzIOHIDLibUserClient.h; sourceTree = "<group>"; };
+		A8DDC9B61B7B724C00A83E70 /* IOBSD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOBSD.h; sourceTree = "<group>"; };
+		A8DDC9B71B7B724C00A83E70 /* IOCFBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOCFBundle.h; sourceTree = "<group>"; };
+		A8DDC9B81B7B724C00A83E70 /* IOCFPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOCFPlugIn.h; sourceTree = "<group>"; };
+		A8DDC9B91B7B724C00A83E70 /* IOCFSerialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOCFSerialize.h; sourceTree = "<group>"; };
+		A8DDC9BA1B7B724C00A83E70 /* IOCFUnserialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOCFUnserialize.h; sourceTree = "<group>"; };
+		A8DDC9BB1B7B724C00A83E70 /* IOCFURLAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOCFURLAccess.h; sourceTree = "<group>"; };
+		A8DDC9BC1B7B724C00A83E70 /* IODataQueueClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IODataQueueClient.h; sourceTree = "<group>"; };
+		A8DDC9BD1B7B724C00A83E70 /* IODataQueueShared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IODataQueueShared.h; sourceTree = "<group>"; };
+		A8DDC9BE1B7B724C00A83E70 /* IOKitKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOKitKeys.h; sourceTree = "<group>"; };
+		A8DDC9BF1B7B724C00A83E70 /* IOKitLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOKitLib.h; sourceTree = "<group>"; };
+		A8DDC9C01B7B724C00A83E70 /* iokitmig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iokitmig.h; sourceTree = "<group>"; };
+		A8DDC9C11B7B724C00A83E70 /* IOKitServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOKitServer.h; sourceTree = "<group>"; };
+		A8DDC9C21B7B724C00A83E70 /* IOMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOMessage.h; sourceTree = "<group>"; };
+		A8DDC9C31B7B724C00A83E70 /* IOReturn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOReturn.h; sourceTree = "<group>"; };
+		A8DDC9C41B7B724C00A83E70 /* IOSharedLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSharedLock.h; sourceTree = "<group>"; };
+		A8DDC9C51B7B724C00A83E70 /* IOTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOTypes.h; sourceTree = "<group>"; };
+		A8DDC9C61B7B724C00A83E70 /* OSMessageNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMessageNotification.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4121928D1B72FDD8008A46D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				412192941B72FDD8008A46D1 /* Foundation.framework in Frameworks */,
+				412192A81B72FE1B008A46D1 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		412192871B72FDD8008A46D1 = {
+			isa = PBXGroup;
+			children = (
+				412192951B72FDD8008A46D1 /* fuzzFoundation */,
+				412192921B72FDD8008A46D1 /* Frameworks */,
+				412192911B72FDD8008A46D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		412192911B72FDD8008A46D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				412192901B72FDD8008A46D1 /* fuzzFoundation */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		412192921B72FDD8008A46D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				412192A71B72FE1B008A46D1 /* IOKit.framework */,
+				412192931B72FDD8008A46D1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		412192951B72FDD8008A46D1 /* fuzzFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				A8DDC9B51B7B724C00A83E70 /* IOKit */,
+				412192B11B788EB5008A46D1 /* ClientDelegate.h */,
+				412192AF1B786F7B008A46D1 /* Client.h */,
+				412192BD1B79F67E008A46D1 /* Client.m */,
+				412192AC1B730930008A46D1 /* DataBuild.h */,
+				412192AD1B7309B8008A46D1 /* DataBuild.m */,
+				412192BF1B7A0F9E008A46D1 /* FuzzIOHIDResourceUserClient.h */,
+				412192C01B7A0FBD008A46D1 /* FuzzIOHIDResourceUserClient.m */,
+				412192C61B7B433C008A46D1 /* FuzzIOHIDLibUserClient.h */,
+				412192C41B7B42D8008A46D1 /* FuzzIOHIDLibUerClient.m */,
+				412192B41B79E89B008A46D1 /* GoFuzz.h */,
+				412192B51B79E930008A46D1 /* GoFuzz.m */,
+				4121929F1B72FDD8008A46D1 /* main.m */,
+				412192961B72FDD8008A46D1 /* Package */,
+				4121929A1B72FDD8008A46D1 /* Supporting Files */,
+			);
+			path = fuzzFoundation;
+			sourceTree = "<group>";
+		};
+		412192961B72FDD8008A46D1 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				412192971B72FDD8008A46D1 /* DEBIAN */,
+				4121929C1B72FDD8008A46D1 /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		412192971B72FDD8008A46D1 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				412192981B72FDD8008A46D1 /* control.txt */,
+				412192991B72FDD8008A46D1 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		4121929A1B72FDD8008A46D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4121929B1B72FDD8008A46D1 /* PackageVersion.plist */,
+				412192A11B72FDD8008A46D1 /* fuzzFoundation-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4121929C1B72FDD8008A46D1 /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				4121929D1B72FDD8008A46D1 /* bin */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		4121929D1B72FDD8008A46D1 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				4121929E1B72FDD8008A46D1 /* 0xdeadfa11 */,
+			);
+			name = bin;
+			sourceTree = "<group>";
+		};
+		A8DDC9B51B7B724C00A83E70 /* IOKit */ = {
+			isa = PBXGroup;
+			children = (
+				A8DDC9B61B7B724C00A83E70 /* IOBSD.h */,
+				A8DDC9B71B7B724C00A83E70 /* IOCFBundle.h */,
+				A8DDC9B81B7B724C00A83E70 /* IOCFPlugIn.h */,
+				A8DDC9B91B7B724C00A83E70 /* IOCFSerialize.h */,
+				A8DDC9BA1B7B724C00A83E70 /* IOCFUnserialize.h */,
+				A8DDC9BB1B7B724C00A83E70 /* IOCFURLAccess.h */,
+				A8DDC9BC1B7B724C00A83E70 /* IODataQueueClient.h */,
+				A8DDC9BD1B7B724C00A83E70 /* IODataQueueShared.h */,
+				A8DDC9BE1B7B724C00A83E70 /* IOKitKeys.h */,
+				A8DDC9BF1B7B724C00A83E70 /* IOKitLib.h */,
+				A8DDC9C01B7B724C00A83E70 /* iokitmig.h */,
+				A8DDC9C11B7B724C00A83E70 /* IOKitServer.h */,
+				A8DDC9C21B7B724C00A83E70 /* IOMessage.h */,
+				A8DDC9C31B7B724C00A83E70 /* IOReturn.h */,
+				A8DDC9C41B7B724C00A83E70 /* IOSharedLock.h */,
+				A8DDC9C51B7B724C00A83E70 /* IOTypes.h */,
+				A8DDC9C61B7B724C00A83E70 /* OSMessageNotification.h */,
+			);
+			path = IOKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4121928F1B72FDD8008A46D1 /* fuzzFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 412192A41B72FDD8008A46D1 /* Build configuration list for PBXNativeTarget "fuzzFoundation" */;
+			buildPhases = (
+				4121928C1B72FDD8008A46D1 /* Sources */,
+				4121928D1B72FDD8008A46D1 /* Frameworks */,
+				4121928E1B72FDD8008A46D1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fuzzFoundation;
+			productName = fuzzFoundation;
+			productReference = 412192901B72FDD8008A46D1 /* fuzzFoundation */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		412192881B72FDD8008A46D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				TargetAttributes = {
+					4121928F1B72FDD8008A46D1 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = 4121928B1B72FDD8008A46D1 /* Build configuration list for PBXProject "fuzzFoundation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 412192871B72FDD8008A46D1;
+			productRefGroup = 412192911B72FDD8008A46D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4121928F1B72FDD8008A46D1 /* fuzzFoundation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4121928E1B72FDD8008A46D1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4121928C1B72FDD8008A46D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				412192B61B79E930008A46D1 /* GoFuzz.m in Sources */,
+				412192C11B7A0FBD008A46D1 /* FuzzIOHIDResourceUserClient.m in Sources */,
+				412192AE1B7309B8008A46D1 /* DataBuild.m in Sources */,
+				412192C51B7B42D8008A46D1 /* FuzzIOHIDLibUerClient.m in Sources */,
+				412192A01B72FDD8008A46D1 /* main.m in Sources */,
+				412192BE1B79F67E008A46D1 /* Client.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		412192A21B72FDD8008A46D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		412192A31B72FDD8008A46D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		412192A51B72FDD8008A46D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7,
+				);
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fuzzFoundation/fuzzFoundation-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				INSTALL_PATH = /usr/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		412192A61B72FDD8008A46D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7,
+				);
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fuzzFoundation/fuzzFoundation-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				INSTALL_PATH = /usr/bin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4121928B1B72FDD8008A46D1 /* Build configuration list for PBXProject "fuzzFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				412192A21B72FDD8008A46D1 /* Debug */,
+				412192A31B72FDD8008A46D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		412192A41B72FDD8008A46D1 /* Build configuration list for PBXNativeTarget "fuzzFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				412192A51B72FDD8008A46D1 /* Debug */,
+				412192A61B72FDD8008A46D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 412192881B72FDD8008A46D1 /* Project object */;
+}
